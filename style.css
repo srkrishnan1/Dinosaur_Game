@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: roboto;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.world {
+  overflow: hidden;
+  position: relative;
+}
+.score {
+  margin-bottom: 12px;
+  position: absolute;
+  top: 1vmin;
+  right: 8vmin;
+  font-size: 5vmin;
+  font-weight: bold;
+}
+.ground {
+  --left: 0;
+  position: absolute;
+  width: 300%;
+  bottom: 0;
+  left: calc(var(--left) * 1%);
+}
+.dino {
+  --bottom: 0;
+  position: absolute;
+  left: 1%;
+  height: 30%;
+  bottom: calc(var(--bottom) * 1%);
+}
+.heading {
+  text-align: center;
+  font-size: 5vmin;
+  font-weight: bold;
+  top: 1vmin;
+}
+.hide {
+  display: none;
+}
+.cactus {
+  height: 30%;
+  left: calc(var(--left) * 1%);
+  bottom: 0;
+  position: absolute;
+}
